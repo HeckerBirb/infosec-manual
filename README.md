@@ -1,9 +1,13 @@
 # The Infosec Manual
 An "Open-source methodology on pentesting and risk mitigation" is a manual intended to be used as references when either seeking information on infosec risk mitigation or penetration testing.
 
-## Composition
+## Contents
 The manual is split up into sections, one for common service testing and one for common privilege escalation techniques. 
+
+### Services
 The **services** part contains information about common techniques and commands to try out on a particular server, in order to determine whether or not the service is vulnerable to certain attacks. 
+
+### Privesc
 The **privesc** section contains articles for common pitfalls and quick checks as well as more subtle information gathering and scripts that help by automating a lot of the work.
 
 # The vision
