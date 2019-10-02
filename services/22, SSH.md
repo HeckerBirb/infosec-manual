@@ -15,6 +15,7 @@ $ python 45233.py --port [port] --username [username] [IP]
 ```
 $ python 45233.py --port 22 --username root 10.10.10.10
 root is a valid user!
+
 $ python 45233.py --port 22 --username james 10.10.10.10
 james is not a valid user!
 ```
@@ -25,7 +26,7 @@ There could be accounts on the machine that have default credentials.
 ### Example command
 ```
 $ ssh pi@rasp-pi.local
-(password: raspberry)
+ (password: raspberry)
 ```
 Example default credentials can be found here:
 https://github.com/danielmiessler/SecLists/blob/master/Passwords/Default-Credentials/ssh-betterdefaultpasslist.txt
