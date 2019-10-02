@@ -18,9 +18,14 @@ root is a valid user!
 $ python 45233.py --port 22 --username james 10.10.10.10
 james is not a valid user!
 ```
-  
+
 ## Default credentials
 There could be accounts on the machine that have default credentials.
 
-### Default credentials list
+### Example command
+```
+$ ssh pi@rasp-pi.local
+(password: raspberry)
+```
+Example default credentials can be found here:
 https://github.com/danielmiessler/SecLists/blob/master/Passwords/Default-Credentials/ssh-betterdefaultpasslist.txt
